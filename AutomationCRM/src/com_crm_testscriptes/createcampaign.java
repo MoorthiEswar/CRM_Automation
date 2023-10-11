@@ -27,10 +27,11 @@ public class createcampaign extends Baseclass{
 		c.setDescriptiontextfield().sendKeys("abcd");
 		WebElement d1 = c.getstatusdropdown();
 		Select s=new Select(d1);
-		s.selectByValue("Public Relations");
+		s.selectByValue("Webinar");
 		WebElement ele = c.gettypedropdown();
 		Select s1=new Select(ele);
 		s1.selectByValue("Planning");
+		c.setcampaignsavebtn();
 		
 	}
 

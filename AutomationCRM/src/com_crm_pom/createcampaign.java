@@ -29,7 +29,7 @@ public class createcampaign {
     driver.findElement(By.xpath("(//td[@class='tableData'])[1]")).click();
     WebElement ele4 = driver.findElement(By.xpath("//select[@name='property(Lead Source)'and @class='textField']"));
 	Select s3=new Select(ele4);
-	s3.selectByValue("Public Relations");
+	s3.selectByValue("Webinar");
 	WebElement ele5 = driver.findElement(By.xpath("//select[@name='property(Industry)'and @class='textField']"));
 	Select s4=new Select(ele5);
 	s4.selectByValue("ERP");
