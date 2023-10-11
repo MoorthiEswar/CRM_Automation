@@ -5,8 +5,8 @@
     <classes>
       <class name="com_crm_testscriptes.createcampaign">
         <methods>
-          <include name="openthebrowser"/>
           <include name="createcampaign"/>
+          <include name="openthebrowser"/>
           <include name="closethebrowser"/>
           <include name="Logout"/>
           <include name="Login"/>

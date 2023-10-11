@@ -14,47 +14,45 @@
       <![CDATA[successfull application page logined]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-10-11T12:21:57 IST" name="Default suite" finished-at="2023-10-11T12:22:19 IST" duration-ms="22310">
+  <suite started-at="2023-10-11T13:06:26 IST" name="Default suite" finished-at="2023-10-11T13:06:49 IST" duration-ms="22766">
     <groups>
     </groups>
-    <test started-at="2023-10-11T12:21:57 IST" name="Default test" finished-at="2023-10-11T12:22:19 IST" duration-ms="22310">
+    <test started-at="2023-10-11T13:06:26 IST" name="Default test" finished-at="2023-10-11T13:06:49 IST" duration-ms="22766">
       <class name="com_crm_testscriptes.createcampaign">
-        <test-method is-config="true" signature="openthebrowser()[pri:0, instance:com_crm_testscriptes.createcampaign@4bdeaabb]" started-at="2023-10-11T12:21:57 IST" name="openthebrowser" finished-at="2023-10-11T12:22:00 IST" duration-ms="2879" status="PASS">
+        <test-method is-config="true" signature="openthebrowser()[pri:0, instance:com_crm_testscriptes.createcampaign@79079097]" started-at="2023-10-11T13:06:26 IST" name="openthebrowser" finished-at="2023-10-11T13:06:30 IST" duration-ms="3161" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[browser is open]]>
             </line>
           </reporter-output>
         </test-method> <!-- openthebrowser -->
-        <test-method is-config="true" signature="Login()[pri:0, instance:com_crm_testscriptes.createcampaign@4bdeaabb]" started-at="2023-10-11T12:22:00 IST" name="Login" finished-at="2023-10-11T12:22:07 IST" duration-ms="6745" status="PASS">
+        <test-method is-config="true" signature="Login()[pri:0, instance:com_crm_testscriptes.createcampaign@79079097]" started-at="2023-10-11T13:06:30 IST" name="Login" finished-at="2023-10-11T13:06:37 IST" duration-ms="7151" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[successfull application page logined]]>
             </line>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="createcampaign()[pri:0, instance:com_crm_testscriptes.createcampaign@4bdeaabb]" started-at="2023-10-11T12:22:07 IST" name="createcampaign" finished-at="2023-10-11T12:22:19 IST" duration-ms="12323" status="FAIL">
+        <test-method signature="createcampaign()[pri:0, instance:com_crm_testscriptes.createcampaign@79079097]" started-at="2023-10-11T13:06:37 IST" name="createcampaign" finished-at="2023-10-11T13:06:49 IST" duration-ms="12069" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot locate option with value: Public Relations
+              <![CDATA[Cannot locate option with value: Webinar
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
 Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Public Relations
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with value: Webinar
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
 Driver info: driver.version: unknown
 at org.openqa.selenium.support.ui.Select.findOptionsByValue(Select.java:289)
 at org.openqa.selenium.support.ui.Select.selectByValue(Select.java:194)
 at com_crm_testscriptes.createcampaign.createcampaign(createcampaign.java:30)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
@@ -85,14 +83,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createcampaign -->
-        <test-method is-config="true" signature="Logout()[pri:0, instance:com_crm_testscriptes.createcampaign@4bdeaabb]" started-at="2023-10-11T12:22:19 IST" name="Logout" finished-at="2023-10-11T12:22:19 IST" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="Logout()[pri:0, instance:com_crm_testscriptes.createcampaign@79079097]" started-at="2023-10-11T13:06:49 IST" name="Logout" finished-at="2023-10-11T13:06:49 IST" duration-ms="203" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[successfull application page logouted]]>
             </line>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method is-config="true" signature="closethebrowser()[pri:0, instance:com_crm_testscriptes.createcampaign@4bdeaabb]" started-at="2023-10-11T12:22:19 IST" name="closethebrowser" finished-at="2023-10-11T12:22:19 IST" duration-ms="132" status="PASS">
+        <test-method is-config="true" signature="closethebrowser()[pri:0, instance:com_crm_testscriptes.createcampaign@79079097]" started-at="2023-10-11T13:06:49 IST" name="closethebrowser" finished-at="2023-10-11T13:06:49 IST" duration-ms="124" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[successfull application page logined]]>
