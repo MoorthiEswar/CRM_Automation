@@ -6,10 +6,10 @@
       <class name="com_crm_testscriptes.createcampaign">
         <methods>
           <include name="openthebrowser"/>
+          <include name="createcampaign"/>
           <include name="closethebrowser"/>
           <include name="Logout"/>
           <include name="Login"/>
-          <include name="cratecampaign"/>
         </methods>
       </class> <!-- com_crm_testscriptes.createcampaign -->
     </classes>

@@ -83,11 +83,11 @@ public class Createcampaign1 {
 	{
 		return campaignsavebtn;
 	}
-	public WebElement settypedropdown()
+	public WebElement gettypedropdown()
 	{
 		return propertyTypeDropdown;
 	}
-	public WebElement setstatusdropdown()
+	public WebElement getstatusdropdown()
 	{
 		return propertyStatusdropdown;
 	}
