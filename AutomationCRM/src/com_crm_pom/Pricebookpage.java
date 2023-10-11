@@ -12,4 +12,5 @@ public class Pricebookpage {
 	private WebElement pricebookdescription;
 	@FindBy(xpath = "(//input[@name='Button'])[3]")
     private WebElement savebuttonofpricebook;
+	
 }
