@@ -2,12 +2,13 @@ package com_crm_testscriptes;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com_crm_generies.Baseclass;
 import com_crm_pom.Createcampaign1;
 import com_crm_pom.Homeclass;
-
+@Listeners(com_crm_generies.ListenerClass.class)
 public class createcampaign extends Baseclass{
 	@Test
 	public void createcampaign()
@@ -27,7 +28,7 @@ public class createcampaign extends Baseclass{
 		c.setDescriptiontextfield().sendKeys("abcd");
 		WebElement d1 = c.getstatusdropdown();
 		Select s=new Select(d1);
-		s.selectByValue("Public Relations");
+		s.selectByVisibleText("Public Relations");
 		WebElement ele = c.gettypedropdown();
 		Select s1=new Select(ele);
 		s1.selectByValue("Planning");
