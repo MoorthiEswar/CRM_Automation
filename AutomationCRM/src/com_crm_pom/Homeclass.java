@@ -30,6 +30,9 @@ public class Homeclass {
 	@FindBy(xpath = "//a[contains(text(),'Logout [rashmi@dell.com]')]")
 	private WebElement logout;
 	
+	@FindBy(xpath="//a[contains(text(),'Purchase Orders') and @class='menuOff']")
+	private WebElement purchaseOrdTab;
+	
 	public  Homeclass(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -58,10 +61,15 @@ public class Homeclass {
 	public void setSalesordertab() {
 		salesordertab.click();;
 	}
+	
+	public void setpurchaseOrdTab() {
+		purchaseOrdTab.click();
+	}
 
 	public void setLogout() {
 		logout.click();
 	}
+	
 	
 	
 	
