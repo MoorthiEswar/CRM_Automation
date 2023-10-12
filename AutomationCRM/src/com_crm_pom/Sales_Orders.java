@@ -1,7 +1,9 @@
 package com_crm_pom;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Sales_Orders {
 	@FindBy(xpath = "//input[@value='New Sales Order']")
@@ -24,7 +26,7 @@ public class Sales_Orders {
 	private WebElement PurchaseOrder;
 	@FindBy(xpath = "//input[@name='property(Due Date)']")
 	private WebElement DueDate;
-	@FindBy(xpath = "//input[@name='property(Contact Name)']")
+	@FindBy(xpath = "//input[@name='property(Conpropertytact Name)']")
 	private WebElement ContactName;
 	@FindBy(xpath = "//input[@name='property(Excise Duty)']")
 	private WebElement ExciseDuty;
@@ -74,17 +76,160 @@ public class Sales_Orders {
 	private WebElement description;
 	@FindBy(xpath = "(//input[@class='button'and@value='Save'])[2]")
 	private WebElement save;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	public Sales_Orders(WebDriver driver) 
+	{
+		PageFactory.initElements(driver,this);
+	}
+
+	public WebElement setNewsalesbtn() {
+		return newsalesbtn ;
+	}
+
+	public WebElement setSubject() {
+		return subject;
+	}
+
+	public WebElement setCustomerNo() {
+	return CustomerNo;
+	}
+
+	public WebElement setQuoteName() {
+		return QuoteName ;
+	}
+
+	public WebElement setPending() {
+		return pending;
+	}
+
+	public WebElement setSalesCommission() {
+		return SalesCommission;
+	}
+
+	public WebElement setAcountName() {
+		return AcountName;
+	}
+
+	public WebElement setPotentialName() {
+		return PotentialName ;
+	}
+
+	public WebElement setPurchaseOrder() {
+		return PurchaseOrder;
+	}
+
+	public WebElement setDueDate() {
+		return DueDate;
+	}
+
+	public WebElement setContactName() {
+		return ContactName;
+	}
+
+	public WebElement setExciseDuty() {
+		return ExciseDuty;
+	}
+
+	public WebElement setBillingstreet() {
+		return billingstreet ;
+	}
+
+	public WebElement setBillingcity() {
+		 return billingcity ;
+	}
+
+	public WebElement setBillingstate() {
+		 return billingstate;
+	}
+
+	public WebElement setBillingcode() {
+		return billingcode;
+	}
+
+	public WebElement setBillingcountry() {
+		return billingcountry;
+	}
+
+	public WebElement setShippnigstreet() {
+		return shippnigstreet;
+	}
+
+	public WebElement setShippingcity() {
+		return shippingcity;
+	}
+
+	public WebElement setShippingstate() {
+		return shippingstate ;
+	}
+
+	public WebElement setShippingcode() {
+		return shippingcode;
+	}
+
+	public WebElement setShippingcountry() {
+		return shippingcountry;
+	}
+
+	public WebElement setPrdtname() {
+	 return	prdtname;
+	}
+
+	public WebElement setPrdtcode() {
+	return	prdtcode ;
+	}
+
+	public WebElement setQtyInStock() {
+	return	QtyInStock ;
+	}
+
+	public WebElement setQty() {
+	return	Qty;
+	}
+
+	public WebElement setUnitprice() {
+	return unitprice;
+	}
+
+	public WebElement setListprice() {
+	return	Listprice;
+	}
+
+	public WebElement setSubtotal() {
+	return	subtotal;
+	}
+
+	public WebElement setTax() {
+	return	tax;
+	}
+
+	public WebElement setAdjustment() {
+	return	adjustment ;
+	}
+
+	public WebElement setGrandtotal() {
+	return	grandtotal;
+	}
+
+	public WebElement setTermandconditions() {
+return	termandconditions ;
+	}
+
+	public WebElement setDescription() {
+	return	description;
+	}
+
+	public WebElement setSave() {
+	return	save;
+	}
+
+
+
+
+
+
+
+
+
 
 
 
