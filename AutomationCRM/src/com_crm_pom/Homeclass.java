@@ -36,6 +36,9 @@ public class Homeclass {
 	@FindBy(id = "Quotestab")
 	private WebElement Quotestabbutton;
 	
+	@FindBy(xpath="//a[@id='Invoicestab']")
+	private WebElement invoiceTab;
+	
 	public  Homeclass(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -73,7 +76,11 @@ public class Homeclass {
 	{
 		Quotestabbutton.click();
 	}
-
+	
+	public void setinvoiceTab() {
+		invoiceTab.click();
+	}
+	
 	public void setLogout() {
 		logout.click();
 	}
