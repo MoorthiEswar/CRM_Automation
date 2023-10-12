@@ -1,7 +1,9 @@
 package com_crm_pom;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class CreateQuotepage {
    @FindBy(xpath = "//input[@class='button'and @value='New Quote']")
@@ -58,6 +60,168 @@ public class CreateQuotepage {
    private WebElement pdquotepageListPricetext;
    @FindBy(xpath = "//input[@class='button'and @value='Add Product']")
    private WebElement pricebookaddproductbutton;
+   @FindBy(name = "property(Terms and Conditions)")
+   private WebElement pdquotepageTermsandConditionstextbox;
+   @FindBy(name  = "property(Description)")
+   private WebElement pdquotepageDescriptionbox;
+   @FindBy(xpath = "(//input[@class='button'and @value='Save'])[2]")
+   private WebElement pdquotepagesavebutton;
+   
+   
+   public CreateQuotepage(WebDriver driver)
+   {
+	   PageFactory.initElements(driver, this);
+   }
+
+
+public WebElement setNewquotesbutton() {
+	return newquotesbutton ;
+}
+
+
+public WebElement setQuotepagepotentialnametext() {
+	return quotepagepotentialnametext ;
+}
+
+
+public WebElement setQuotepagesubjectnametext() {
+	return quotepagesubjectnametext ;
+}
+
+
+public WebElement setQuotepagevalidtilltext() {
+	return quotepagevalidtilltext;
+}
+
+
+public WebElement setQuotepageQuoteStagetext(WebElement quotepageQuoteStagetext) {
+	return quotepageQuoteStagetext;
+}
+
+
+public WebElement setQuotepageteamtext() {
+	return quotepageteamtext;
+}
+
+
+public WebElement setQuotepagecontactnametext() {
+	return quotepagecontactnametext;
+}
+
+
+public WebElement setQuotepageaccountnametext() {
+	return quotepageaccountnametext;
+}
+
+
+public WebElement setQuotepagecarriertext() {
+	return quotepagecarriertext ;
+}
+
+
+public WebElement setQuotepagecopyaddressbutton() {
+	return quotepagecopyaddressbutton;
+}
+
+
+public WebElement setAibillingstreettext() {
+	return aibillingstreettext;
+}
+
+
+public WebElement setAibillingcitytext() {
+	return aibillingcitytext;
+}
+
+
+public WebElement setAiquotepagebillingstatetext() {
+	return aiquotepagebillingstatetext;
+}
+
+
+public WebElement setAiquotepagebillingcodetext() {
+	return aiquotepagebillingcodetext;
+}
+
+
+public WebElement setAiquotepagebillingcountrytext() {
+	return aiquotepagebillingcountrytext;
+}
+
+
+public WebElement setCaquotepageshippingstreettext() {
+	return caquotepageshippingstreettext;
+}
+
+
+public WebElement setCaquotepageshipingcitytext() {
+	return caquotepageshipingcitytext;
+}
+
+
+public WebElement setCaquotepageshippingstatetext() {
+	return caquotepageshippingstatetext;
+}
+
+
+public WebElement setCaquoteshippingcodetext() {
+	return caquoteshippingcodetext;
+}
+
+
+public WebElement setCaquoteshippingcountrytext() {
+	return caquoteshippingcountrytext;
+}
+
+
+public WebElement setPdquotepageProductNametext() {
+	return pdquotepageProductNametext;
+}
+
+
+public WebElement setPdquotepageProductCodetext() {
+	return pdquotepageProductCodetext;
+}
+
+
+public WebElement setPdquotepageQtyinStocktext() {
+	return pdquotepageQtyinStocktext;
+}
+
+
+public WebElement setPdquotepageQtytext() {
+	return pdquotepageQtytext;
+}
+
+
+public WebElement setPdquotepageUnitPricetext() {
+	return pdquotepageUnitPricetext;
+}
+
+
+public WebElement setPdquotepageListPricetext() {
+	return pdquotepageListPricetext;
+}
+
+
+public WebElement setPricebookaddproductbutton() {
+	return pricebookaddproductbutton;
+}
+
+
+public WebElement setPdquotepageTermsandConditionstextbox() {
+	return pdquotepageTermsandConditionstextbox;
+}
+
+
+public WebElement setPdquotepageDescriptionbox() {
+	return pdquotepageDescriptionbox;
+}
+
+
+public WebElement setPdquotepagesavebutton() {
+	return pdquotepagesavebutton ;
+}
    
    
 }
