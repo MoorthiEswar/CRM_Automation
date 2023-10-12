@@ -91,4 +91,12 @@ public class Createcampaign1 {
 	{
 		return propertyStatusdropdown;
 	}
+	public WebElement settypedropdown()
+	{
+		return propertyTypeDropdown;
+	}
+	public WebElement setstatusdropdown()
+	{
+		return propertyStatusdropdown;
+	}
 }
