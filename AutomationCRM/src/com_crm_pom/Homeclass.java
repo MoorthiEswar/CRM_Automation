@@ -33,6 +33,9 @@ public class Homeclass {
 	@FindBy(xpath="//a[contains(text(),'Purchase Orders') and @class='menuOff']")
 	private WebElement purchaseOrdTab;
 	
+	@FindBy(id = "Quotestab")
+	private WebElement Quotestabbutton;
+	
 	public  Homeclass(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -64,6 +67,11 @@ public class Homeclass {
 	
 	public void setpurchaseOrdTab() {
 		purchaseOrdTab.click();
+	}
+	
+	public void setQuotestabbutton()
+	{
+		Quotestabbutton.click();
 	}
 
 	public void setLogout() {
